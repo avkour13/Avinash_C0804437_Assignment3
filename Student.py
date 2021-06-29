@@ -4,10 +4,7 @@ import logging
 
 
 class Student(unittest.TestCase):
-    # Let us Create an object
     logger = logging.getLogger()
-
-    # Now we are going to Set the threshold of logger to DEBUG
     logger.setLevel(logging.DEBUG)
 
     def total_marks(self, subject1, subject2, subject3):
