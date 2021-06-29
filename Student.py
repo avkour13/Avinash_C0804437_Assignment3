@@ -1,7 +1,9 @@
+import unittest
+
 import logging
 
 
-class Student:
+class Student(unittest.TestCase):
     # Let us Create an object
     logger = logging.getLogger()
 
@@ -13,6 +15,8 @@ class Student:
             assert subject1 > 0
             assert subject2 > 0
             assert subject3 > 0
+            self.assertGreater(subject1, subject2, "Subject 2 has higher marks")
+            self.assertLess(subject2, subject3, "Subject 2 has less marks.")
             total = subject1+subject2+subject3
             self.logger.info("The total marks for the student calculated successfully.")
             return total

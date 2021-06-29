@@ -29,10 +29,10 @@ class Area:
         self.logger.info("The calculation of area of square performed successfully.")
         return area
 
-    def area_rectangle(self, p, q):
+    def area_rectangle(self, w, h):
         try:
-            assert q > 0
-            area = 0.5 * p * q
+            assert h > 0
+            area = 0.5 * w * h
             self.logger.info("The calculation of area of rectangle performed successfully.")
             return area
         except:

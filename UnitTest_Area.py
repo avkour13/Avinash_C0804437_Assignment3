@@ -13,5 +13,5 @@ class UnitTest_Area(unittest.TestCase):
         else:
             radius_positive = False
         self.assertTrue(radius_positive, "The value of radius should be greater than zero.")
-        self.assertNotEqual(area.area_rectangle(6, -3), 8)
+        self.assertNotEqual(area.area_rectangle(6, 8), 48)
         self.assertEqual(area.area_parallelogram(2, 3), 6)
